@@ -114,7 +114,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" width="60%" src="images/fig-overview.png">
+      <div class="has-text-centered">
+        <img id="teaser" width="60%" src="images/fig-overview.png">
+      </div>
       <h2 class="subtitle has-text-centered">
         <p style="font-family:Times New Roman"><b>Figure 1. Illustration of how model behavior changes with the scale of instructional strength controlling the "fraction" of reasoning, applied to both Chain-of-Thought and Reflection prompting.</b></p>
       </h2>
@@ -169,7 +171,7 @@
               <ul>
                 <li><b>Fractional Reasoning</b> is a <b>training-free, model-agnostic</b> framework that enables continuous control over reasoning intensity at inference time.</li>
               
-                <li>It learns a <b>latent steering vector</b> <code>h<sub>steer</sub></code> that captures prompt-induced shifts in the LLM’s internal representations. This vector is derived by contrasting representations from positive and negative prompts across multiple layers.</li>
+                <li>It learns a <b>latent steering vector</b> <code>h<sub>steer</sub></code> that captures prompt-induced shifts in the LLM's internal representations. This vector is derived by contrasting representations from positive and negative prompts across multiple layers.</li>
               
                 <li>At inference, this vector is applied with a tunable scalar <code>α</code> to modulate reasoning strength:
                   <br>
@@ -202,21 +204,27 @@
                 <li>Fractional Reasoning enables continuous adjustment of both reasoning depth and reflection strength—tailoring inference-time behavior to the demands of each input.</li>
               </ul>
             </div>        
-            <img id="model" width="70%" src="images/final_performance.png">
+            <div class="has-text-centered">
+              <img id="model" width="70%" src="images/final_performance.png">
+            </div>
             <h3 class="subtitle has-text-centered">
               <p style="font-family:Times New Roman"><b>Figure 2. Averaged accuracy across MATH500, GSM8K, and GPQA. Blue bars represent standard test-time scaling methods, purple bars show these methods enhanced by our Fractional Reasoning.</b></p>
             </h3>  
 
             <ul>Thinking</ul>
             
-            <img id="model" width="70%" src="images/tab1.png">
+            <div class="has-text-centered">
+              <img id="model" width="70%" src="images/tab1.png">
+            </div>
             <h3 class="subtitle has-text-centered">
               <p style="font-family:Times New Roman"><b>Table 1. The performance of our proposed Fractional Reasoning and other common test-time scaling methods on different reasoning benchmarks is presented.</b></p>
             </h3>  
 
             <ul>Reflection</ul>
             
-            <img id="model" width="70%" src="images/tab2.png">
+            <div class="has-text-centered">
+              <img id="model" width="70%" src="images/tab2.png">
+            </div>
             <h3 class="subtitle has-text-centered">
               <p style="font-family:Times New Roman"><b>Table 2. The performance of our proposed Fractional Reasoning and other common test-time scaling methods on reflection.</b></p>
             </h3>
@@ -242,15 +250,19 @@
                 <li>Fractional Reasoning + majority vote works better than majority vote across all number of generations. </li>
               </ul>
             </div>        
-            <img id="model" width="80%" src="images/fig-step.png">
+            <div class="has-text-centered">
+              <img id="model" width="80%" src="images/fig-step.png">
+            </div>
             <h3 class="subtitle has-text-centered">
               <p style="font-family:Times New Roman"><b>Figure 3. Sentence-level control dynamically adjusts reflection strength α at each generation step,enabling correction of errors missed by instance-level control.</b></p>
             </h3>  
 
-            <img id="model" width="50%" src="images/fig-ngeneration.png">
+            <div class="has-text-centered">
+              <img id="model" width="50%" src="images/fig-ngeneration.png">
+            </div>
             <h3 class="subtitle has-text-centered">
               <p style="font-family:Times New Roman"><b>Figure 4. Accuracy on GSM8K and GPQA as a function of the number of generations.</b></p>
-            </h3>  
+            </h3>
             
             
             
