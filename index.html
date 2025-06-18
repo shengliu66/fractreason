@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="GLIGEN:Open-Set Grounded Text-to-Image Generation.">
+        content="Fractional Reasoning via Latent Steering Vectors Improves Inference Time Compute.">
   <meta name="keywords" content="Image Generation, Diffusion, Grounding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GLIGEN:Open-Set Grounded Text-to-Image Generation.</title>
+  <title>Fractional Reasoning via Latent Steering Vectors Improves Inference Time Compute.</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -27,7 +27,7 @@
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> 
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -45,42 +45,36 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">GLIGEN:</h1>
-          <h2 class="title is-2 publication-title">Open-Set Grounded Text-to-Image Generation</h2>
+          <h1 class="title is-1 publication-title">Fractional Reasoning</h1>
+          <h2 class="title is-2 publication-title">via Latent Steering Vectors Improves Inference Time Compute.</h2>
           <div class="is-size-5">
             <span class="author-block">
-                <a href="https://yuheng-li.github.io/" style="color:#f68946;font-weight:normal;">Yuheng Li</a>,                
+                <a href="https://shengliu66.github.io/" style="color:#8C1515;font-weight:normal;">Sheng Liu</a>,                
             </span>
             <span class="author-block">
-              <a href="https://hliu.cc/" style="color:#f68946;font-weight:normal;">Haotian Liu</a>,
+              <a href="" style="color:#8C1515;font-weight:normal;">Tianlang Chen</a>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.ca/citations?user=HDiw-TsAAAAJ&hl=en/" style="color:#F2A900;font-weight:normal;">Qingyang Wu</a>,
+              <a href="" style="color:#8C1515;font-weight:normal;">Pan Lu</a>,
             </span>
             <span class="author-block">
-              <a href="https://pages.cs.wisc.edu/~fmu/" style="color:#f68946;font-weight:normal;">Fangzhou Mu</a>,
+              <a href="" style="color:#8C1515;font-weight:normal;">Haotian Ye</a>,
             </span>
             <span class="author-block">
-              <a href="https://jwyang.github.io/" style="color:#008AD7;font-weight:normal;">Jianwei Yang</a>,
+              <a href="" style="color:#8C1515;font-weight:normal;">Yizheng Chen</a>,
             </span>
             <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/jfgao/" style="color:#008AD7;font-weight:normal;">Jianfeng Gao</a>,
+              <a href="" style="color:#8C1515;font-weight:normal;">Lei Xing</a>,
             </span>  
             <br>
             <span class="author-block">
-              <a href="https://chunyuan.li/" style="color:#008AD7;font-weight:normal;">Chunyuan Li<sup>*</sup></a>,
-            </span>   
-            <span class="author-block">
-              <a href="https://pages.cs.wisc.edu/~yongjaelee/" style="color:#f68946;font-weight:normal;">Yong Jae Lee<sup>*</sup></a>,
+              <a href="" style="color:#8C1515;font-weight:normal;">James Zou</a>,
             </span>                                  
           </div>
 
           <br>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> University of Wisconsin-Madison; </b></span>
-            <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b>Columbia University; </span>
-            <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b>Microsoft</span>
-            <span class="author-block">&nbsp&nbsp<sup>*</sup>Equal Advising</span>
+            <span class="author-block"><b style="color:#8C1515; font-weight:normal">&#x25B6 </b> Stanford University </b></span>
           </div>
 
 
@@ -96,31 +90,12 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/gligen/GLIGEN" target="_blank" 
+                <a href="https://github.com/shengliu66/FractionalReason" target="_blank" 
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
-              </span>
-
-              <span class="link-block">
-                <a href="https://aka.ms/gligen" target="_blank"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Demo</span>
-                  </a>
-              </span>
-              <span class="link-block">
-                <a href="https://youtu.be/-MCkU7IAGKs"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
                   </a>
               </span>
             </div>
@@ -134,9 +109,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" width="150%" src="images/teaser_v5.png?03222242">
+      <img id="teaser" width="150%" src="images/fig-overview.png">
       <h2 class="subtitle has-text-centered">
-        <p style="font-family:Times New Roman"><b>Figure 1. GLIGEN enables versatile grounding capabilities for a frozen text-to-image generation model.</b></p>
+        <p style="font-family:Times New Roman"><b>Figure 1. Illustration of how model behavior changes with the scale of instructional strength controlling the “fraction” of reasoning, applied to both Chain-of-Thought and Reflection prompting.</b></p>
       </h2>
     </div>
   </div>
@@ -151,23 +126,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large-scale <a href="https://github.com/CompVis/stable-diffusion">text-to-image diffusion models</a> have made
-            amazing advances. However, the status quo is to use
-            text input alone, which can impede controllability. In this
-            work, we propose GLIGEN, <b>G</b>rounded-<b>L</b>anguage-to-<b>I</b>mage
-            <b>Gen</b>eration, a novel approach that builds upon and extends
-            the functionality of existing pre-trained text-to-image diffusion models 
-            by enabling them to also be conditioned on
-            <a href="https://github.com/microsoft/GLIP">grounding inputs</a>. <b>To preserve the vast concept knowledge
-              of the pre-trained model, we freeze all of its weights and
-              inject the grounding information into new trainable layers
-              via a gated mechanism</b>. Our model achieves open-world
-            grounded text2img generation with caption and bounding
-            box condition inputs, and the grounding ability generalizes
-            well to novel spatial configuration and concepts. GLIGEN’s
-            zero-shot performance on COCO and LVIS outperforms that
-            of existing supervised layout-to-image baselines by a large
-            margin.
+            Test-time compute has emerged as a powerful paradigm for improving the performance 
+            of large language models (LLMs), where generating multiple outputs or refining 
+            individual chains can significantly boost answer accuracy. However, existing methods 
+            like Best-of-N, majority voting, and self-reflection typically apply reasoning in a 
+            uniform way across inputs, overlooking the fact that different problems may require 
+            different levels of reasoning depth. In this work, we propose <b>Fractional Reasoning</b>, 
+            a training-free and model-agnostic framework that <b>enables continuous control over reasoning 
+            intensity at inference time, going beyond the limitations of fixed instructional prompts.</b> 
+            Our method operates by extracting the latent steering vector associated with deeper reasoning 
+            and reapplying it with a tunable scaling factor, allowing the model to tailor its reasoning 
+            process to the complexity of each input. This supports two key modes of test-time scaling: 
+            (1) improving output quality in breadth-based strategies (e.g., Best-of-N, majority voting), 
+            and (2) enhancing the correctness of individual reasoning chains in depth-based strategies 
+            (e.g., self-reflection). Experiments on GSM8K, MATH500, and GPQA demonstrate that Fractional
+            Reasoning consistently improves performance across diverse reasoning tasks and models.
           </p>
         </div>
       </div>
@@ -177,47 +150,11 @@
 
 
 
-
-
-<section class="section"   style="background-color:#e4e4f781">
-  <div class="columns is-centered has-text-centered">
-      <div style="width:90%;">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-six-fifths">
-            <h2 class="title is-3"><a href="https://aka.ms/gligen" target="_blank"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/5886/5886212.png"> Demo -- Try it out  </a> </h2> 
-          </div>
-        </div>
-        <!-- Abstract. -->
-        <div style="float:left; width:47.1%; border: 0px solid rgba(5, 130, 255, 0.534);">
-          <h2 class="title is-5">I. Generated examples from GLIGEN Demo</h2>
-          <div class="column is-five-fifths">
-              <div class="columns is-centered">
-                <img id="teaser" width="100%" src="images/same_box.gif">
-              </div>
-          </div>
-        </div>
-        <!--/ Abstract. -->
-
-        <div style=" float:right; width:49.8%; border: 0px solid black;">
-          <h2 class="title is-5">II. Demo Instruction</h2>
-          <div class="column is-five-fifths">
-            <div class="columns is-centered">
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/-MCkU7IAGKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<!--               <iframe src="https://user-images.githubusercontent.com/6631389/211468127-60dd5c69-8db9-43d2-a45d-e97b336e5249.mp4" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>  
-    </div>     
-</section>
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-five-fifths">
-        <h2 class="title is-3"><img id="painting_icon" width="5%" src="https://cdn-icons-png.flaticon.com/512/5379/5379860.png"> Model Designs: Efficient Training & Flexible Inference </h2> 
+        <h2 class="title is-3"><img id="painting_icon" width="5%" src="https://cdn-icons-png.flaticon.com/512/5379/5379860.png"> Fractional Reasoning: Performance </h2> 
       </div>
     </div>
 
@@ -225,260 +162,18 @@
           <div class="column is-six-fifths">
             <div class="content has-text-justified">
               <ul>
-                <li>GLIGEN is built upon existing pretrained diffusion models. whose original weights are <b>frozen</b> to preserve vast pre-trained knowledge.</li>
-                <li>A new trainable Gated Self-Attention layer is added at each transformer block to absorb new grounding input.</li>
-                <li>Each grounding token consists of two types of information: <b>semantic</b> of grounded entity (encoded text or image) and <b>spatial location</b> (encoded bounding box or keypoints).</li>
+                <li>Fractional Reasoning is a <b>training-free and model-agnostic</b> framework for improving test-time compute. </li>
+                <li>Fractional Reasoning can adaptively control the reasoning behavior in LLMs by identifying and reapplying reasoning-induced latent shifts with a tunable scaling factor. </li>
+                <li>Fractional Reasoning enables continuous adjustment of both reasoning depth and reflection strength—tailoring inference-time behavior to the demands of each input.</li>
               </ul>
             </div>        
-            <img id="model" width="50%" src="images/approach_v1.png">
+            <img id="model" width="50%" src="images/final_performance.png">
             <h3 class="subtitle has-text-centered">
-              <p style="font-family:Times New Roman"><b>Figure 2. Gated Self-Attention is used to fuse new grounding tokens.</b></p>
+              <p style="font-family:Times New Roman"><b>Figure 2. Averaged accuracy across MATH500, GSM8K, and GPQA. Blue bars represent standard test-time scaling methods, purple bars show these methods enhanced by our Fractional Reasoning.</b></p>
             </h3>   
-
-
         </div>
   </div>
 </section>
-
-
-
-<section class="section"   style="background-color:#e4e4f781">
-  <div class="columns is-centered has-text-centered">
-      <div style="width:90%;">
-
-        <!-- Abstract. -->
-        <div style="float:left; width:47.1%; border: 0px solid black;">
-          <h2 class="title is-5">I. Modulated Training</h2>
-          <div class="content has-text-justified">
-              Compared with other ways of using a pretrained diffusion model such as full-model finetuning, our newly added modulated layers are continual pre-trained on large grounding data (image-text-box) and is more cost-efficient. Just like Lego, one can plug and play different trained layers to enable different new capabilities.                 
-          </div>  
-
-          <div class="column is-five-fifths">
-              <div class="columns is-centered">
-                <img id="modulated_training" width="105%" src="images/approach_change.gif">
-                
-              </div>
-          </div>
-        </div>
-        <!--/ Abstract. -->
-
-        <div style=" float:right; width:47.8%; border: 0px solid black;">
-          <h2 class="title is-5">II. Scheduled Sampling</h2>
-          <div class="content has-text-justified">
-              As a favorable property of our modulated training, GLIGEN supports scheduled sampling in the diffusion process for inference, where the model can dynamically choose to use grounding tokens (by adding the new layer) or original diffusion model with good prior (by kicking out the new layer), and thus balances generation quality and grounding ability.                   
-          </div>  
-
-          <div class="column is-five-fifths">
-              <div class="columns is-centered">
-                <img id="modulated_training" width="97%" src="images/approach_sampling.gif">
-                
-              </div>
-          </div>
-        </div>
-
-      </div>  
-    </div>     
-</section>
-
-
-
-<section class="section">
-  <!-- Results. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Results</h2>
-    </div>
-  </div>
-  <!-- </div> -->
-  <!--/ Results. -->    
-<div class="container is-max-desktop">
-
-
-  <!-- Grounedtext2img. -->
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Text Grounded T2I Generation (Bounding box)</font></h2>
-      <img id="teaser" width="95%" src="images/groundtext2img.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>By exploiting knowledge of pretrained text2img model, GLIGEN can generate varieties of objects in given locations, it also supports varies of styles.</b>
-      </h1>     
-      <br>
-      <img id="teaser" width="95%" src="images/gligen_vs_dalle_images.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>Compared with existing text2img models such as DALLE1 and DALLE2, GLIGEN enables the new capability to allow grounding instruction. The text prompt and DALLE generated images are from <a href='https://openai.com/dall-e-2/'>OpenAI Blog</a>.</b>
-      </h1>       
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-
-  <!-- counterfactual. -->
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Spatially counterfactual generation</font></h2>
-      <img id="teaser" width="95%" src="images/counterfactual.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>By explicitly specifying object size and location, GLIGEN can generate spatially counterfactual results which are difficult to release through text2img model (e.g., Stable Diffusion).</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-  <br>
-  <br>
-  <br>
-
-  <!-- counterfactual. -->
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Image Grounded T2I Generation (Bounding box)</font></h2>
-      <img id="teaser" width="95%" src="images/image_condition.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN can also ground on reference images. Top row indicates reference images can provide more fine-grained details beyond text description such as style and shape or car. The second row shows reference image can also be used as style image in which case we find ground it into corner or edge of an image is sufficient.</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-  <br>
-  <br>
-  <br>
-
-  <!-- counterfactual. -->
-  <!-- <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4">Grounded T2I Generation (Keypoints)</h2>
-      <img id="teaser" width="95%" src="images/keypoint.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN can also ground human keypoints while doing text-to-image generation.</b>
-      </h1>                 
-    </div>
-  </div> -->
-
-
-  <!-- <br>
-  <br>
-  <br> -->
-
-  <!-- counterfactual. -->
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Grounded Inpainting</font></h2>
-      <img id="teaser" width="95%" src="images/inpaint.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>Like other diffusion models, GLIGEN can also perform grounded image inpaint, which can generate objects tightly following provided bounding boxes.</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-
-
-  <br>
-  <br>
-  <br>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Canny Map Grounded T2I Generation</font></h2>
-      <img id="teaser" width="98%" src="images/canny.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN results on canny maps.</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-  <br>
-  <br>
-  <br>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Depth Map Grounded T2I Generation</font></h2>
-      <img id="teaser" width="98%" src="images/depth.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN results on depth maps.</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-
-
-  <br>
-  <br>
-  <br>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Normal Map Grounded T2I Generation</font></h2>
-      <img id="teaser" width="98%" src="images/normal.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN results on normal maps.</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-  <br>
-  <br>
-  <br>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Semantic Map Grounded T2I Generation</font></h2>
-      <img id="teaser" width="98%" src="images/sem.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN results on semantic maps.</b>
-      </h1>                 
-    </div>
-  </div>
-
-
-
-
-  <br>
-  <br>
-  <br>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4"><font color="#0000ff">Hed Map Grounded T2I Generation</font></h2>
-      <img id="teaser" width="98%" src="images/hed.png">
-      <h1>
-        <p style="font-family:Times New Roman"><b>GLIGEN results on hed maps.</b>
-      </h1>                 
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4">Terms and Conditions</h2>
-      <h1>
-        <p style="font-family:Times New Roman">We have strict terms and conditions for using the model checkpoints and the demo; it is restricted to uses that follow the license agreement of <a href="https://github.com/CompVis/latent-diffusion">Latent Diffusion Model</a> and <a href="https://github.com/Stability-AI/StableDiffusion">Stable Diffusion</a>.
-        </b>
-      </h1>                 
-    </div>     
-  </div>
-
-
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4">Broader Impact</h2>
-      <h1>
-        <p style="font-family:Times New Roman">It is important to note that our model GLIGEN is designed for open-world grounded text-to-image generation with caption and various condition inputs (e.g. bounding box). However, we also recognize the importance of responsible AI considerations and the need to clearly communicate the capabilities and limitations of our research. While the grounding ability generalizes well to novel spatial configuration and concepts, our model may not perform well in scenarios that are out of scope or beyond the intended use case. We strongly discourage the misuse of our model in scenarios, where our technology could be used to generate misleading or malicious images. We also acknowledge the potential biases that may be present in the data used to train our model, and the need for ongoing evaluation and improvement to address these concerns. To ensure transparency and accountability, we have included a model card that describes the intended use cases, limitations, and potential biases of our model. We encourage users to refer to this model card and exercise caution when applying our technology in new contexts. We hope that our work will inspire further research and discussion on the ethical implications of AI and the importance of transparency and accountability in the development of new technologies.</a>.
-        </b>
-      </h1>                 
-    </div>     
-  </div>
 
 
 
@@ -486,11 +181,11 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-@article{li2023gligen,
-  author      = {Li, Yuheng and Liu, Haotian and Wu, Qingyang and Mu, Fangzhou and Yang, Jianwei and Gao, Jianfeng and Li, Chunyuan and Lee, Yong Jae},
-  title       = {GLIGEN: Open-Set Grounded Text-to-Image Generation},
+@article{liu2025fractional,
+  author      = {Liu, Sheng and Chen, Tianlang and Lu, Pan and Ye, Haotian and Chen, Yizheng and Xing, Lei and Zou, James},
+  title       = {Fractional Reasoning via Latent Steering Vectors Improves Inference Time Compute},
   publisher   = {arXiv:2301.07093},
-  year        = {2023},
+  year        = {2025},
 }
 </code></pre>
   </div>
@@ -508,14 +203,11 @@
     </p>
     <p>
 
-    <a href='https://github.com/Computer-Vision-in-the-Wild/'><img id="painting_icon" width="10%" src="https://avatars.githubusercontent.com/u/97258247?s=200&v=4"> 
-    </a> 
     <b> Related Links</b> : 
     <div class="content has-text-justified">
       <ul>
-        <li><a href='https://github.com/Computer-Vision-in-the-Wild/'>[Computer Vision in the Wild] </a> </li>
-        <li>GLIGEN: (box, concept) &#8594 image || GLIP : image &#8594 (box, concept); See grounded image understanding in <a href='https://github.com/microsoft/GLIP'>[GLIP]</a></li>
-        <li>Modulated design and training of foundation models for image understanding <a href='https://react-vl.github.io/'>[REACT]</a></li>
+        <li><a href='https://arxiv.org/pdf/2311.06668'>[Latent steering vector for improving conversational safety] </a> </li>
+        <li><a href='https://arxiv.org/pdf/2410.15778'>[Latent steering vector for reducing hallucination] </a></li>
       </ul>
  
     </div>     
