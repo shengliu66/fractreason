@@ -54,7 +54,7 @@
           </div>
           <div class="is-size-5">
             <span class="author-block">
-                <a href="https://shengliu66.github.io/" style="color:#8C1515;font-weight:normal;">Sheng Liu<sup>*</sup></a>,                
+                <a href="https://shengliu66.github.io/" style="color:#000000;font-weight:normal;">Sheng Liu<sup>*</sup></a>,                
             </span>
             <span class="author-block">
               <a href="" style="color:#000000;font-weight:normal;">Tianlang Chen<sup>*</sup></a>,
@@ -79,7 +79,7 @@
 
           <br>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><b style="color:#8C1515; font-weight:normal" Stanford University </b></span>
+            <span class="author-block"><b> Stanford University </b></span>
           </div>
 
 
@@ -181,15 +181,9 @@
                 <li>Fractional Reasoning enables instance-specific steering of reasoning depth and reflection strength, improving output quality without modifying the underlying model.</li>
               </ul>              
             </div>        
-            <img id="model" width="70%" src="images/final_performance.png">
-            <h3 class="subtitle has-text-centered">
-              <p style="font-family:Times New Roman"><b>Figure 2. Averaged accuracy across MATH500, GSM8K, and GPQA. Blue bars represent standard test-time scaling methods, purple bars show these methods enhanced by our Fractional Reasoning.</b></p>
-            </h3>   
         </div>
   </div>
 </section>
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -211,10 +205,61 @@
             <img id="model" width="70%" src="images/final_performance.png">
             <h3 class="subtitle has-text-centered">
               <p style="font-family:Times New Roman"><b>Figure 2. Averaged accuracy across MATH500, GSM8K, and GPQA. Blue bars represent standard test-time scaling methods, purple bars show these methods enhanced by our Fractional Reasoning.</b></p>
-            </h3>   
+            </h3>  
+
+            <ul>Thinking</ul>
+            
+            <img id="model" width="70%" src="images/tab1.png">
+            <h3 class="subtitle has-text-centered">
+              <p style="font-family:Times New Roman"><b>Figure 3. The performance of our proposed Fractional Reasoning and other common test-time scaling methods on different reasoning benchmarks is presented.</b></p>
+            </h3>  
+
+            <ul>Reflection</ul>
+            
+            <img id="model" width="70%" src="images/tab2.png">
+            <h3 class="subtitle has-text-centered">
+              <p style="font-family:Times New Roman"><b>Figure 3. The performance of our proposed Fractional Reasoning and other common test-time scaling methods on reflection.</b></p>
+            </h3>
+            
+
         </div>
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="5%" src="https://cdn-icons-png.flaticon.com/512/5379/5379860.png"> Fractional Reasoning: Analysis </h2> 
+      </div>
+    </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-six-fifths">
+            <div class="content has-text-justified">
+              <ul>
+                <li>Fractional Reasoning can work on sentence level </li>
+                <li>Fractional Reasoning + majority vote works better than majority vote across all number of generations. </li>
+              </ul>
+            </div>        
+            <img id="model" width="70%" src="images/fig-step.png">
+            <h3 class="subtitle has-text-centered">
+              <p style="font-family:Times New Roman"><b>Figure 4. Sentence-level control dynamically adjusts reflection strength α at each generation step,enabling correction of errors missed by instance-level control.</b></p>
+            </h3>  
+
+            <img id="model" width="70%" src="images/fig-ngeneration.png">
+            <h3 class="subtitle has-text-centered">
+              <p style="font-family:Times New Roman"><b>Figure 5. Accuracy on GSM8K and GPQA as a function of the number of generations.</b></p>
+            </h3>  
+            
+            
+            
+            
+
+        </div>
+  </div>
+</section>
+
 
 
 
