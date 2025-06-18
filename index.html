@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Fractional Reasoning via Latent Steering Vectors Improves Inference Time Compute.">
-  <meta name="keywords" content="Image Generation, Diffusion, Grounding">
+  <meta name="keywords" content="reasoning, large language model, inference time scaling, latent steering">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fractional Reasoning via Latent Steering Vectors Improves Inference Time Compute</title>
 
@@ -46,7 +46,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
         <div class="column has-text-centered">
-          <img src="./static/images/icon.png" alt="Project Icon" style="max-width: 200px; height: auto; margin-bottom: 20px;">
+          <img src="./static/images/icon.png" alt="Project Icon" style="max-width: 150px; height: auto; margin-bottom: 20px;">
           
           <div>
             <h1 class="title is-1 publication-title">Fractional Reasoning</h1>
@@ -57,29 +57,29 @@
                 <a href="https://shengliu66.github.io/" style="color:#8C1515;font-weight:normal;">Sheng Liu<sup>*</sup></a>,                
             </span>
             <span class="author-block">
-              <a href="" style="color:#8C1515;font-weight:normal;">Tianlang Chen<sup>*</sup></a>,
+              <a href="" style="color:#000000;font-weight:normal;">Tianlang Chen<sup>*</sup></a>,
             </span>
             <span class="author-block">
-              <a href="" style="color:#8C1515;font-weight:normal;">Pan Lu</a>,
+              <a href="" style="color:#000000;font-weight:normal;">Pan Lu</a>,
             </span>
             <span class="author-block">
-              <a href="" style="color:#8C1515;font-weight:normal;">Haotian Ye</a>,
+              <a href="" style="color:#000000;font-weight:normal;">Haotian Ye</a>,
             </span>
             <span class="author-block">
-              <a href="" style="color:#8C1515;font-weight:normal;">Yizheng Chen</a>,
+              <a href="" style="color:#000000;font-weight:normal;">Yizheng Chen</a>,
             </span>
             <span class="author-block">
-              <a href="" style="color:#8C1515;font-weight:normal;">Lei Xing</a>,
+              <a href="" style="color:#000000;font-weight:normal;">Lei Xing</a>,
             </span>  
             <br>
             <span class="author-block">
-              <a href="" style="color:#8C1515;font-weight:normal;">James Zou</a>,
+              <a href="" style="color:#000000;font-weight:normal;">James Zou</a>,
             </span>                                  
           </div>
 
           <br>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><b style="color:#8C1515; font-weight:normal">&#x25B6 </b> Stanford University </b></span>
+            <span class="author-block"><b style="color:#8C1515; font-weight:normal" Stanford University </b></span>
           </div>
 
 
@@ -114,7 +114,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" width="150%" src="images/fig-overview.png">
+      <img id="teaser" width="120%" src="images/fig-overview.png">
       <h2 class="subtitle has-text-centered">
         <p style="font-family:Times New Roman"><b>Figure 1. Illustration of how model behavior changes with the scale of instructional strength controlling the "fraction" of reasoning, applied to both Chain-of-Thought and Reflection prompting.</b></p>
       </h2>
@@ -151,6 +151,42 @@
       </div>
     </div>
     <!--/ Abstract. -->
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="5%" src="https://cdn-icons-png.flaticon.com/512/5379/5379860.png"> Fractional Reasoning: Framework </h2> 
+      </div>
+    </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-six-fifths">
+            <div class="content has-text-justified">
+              <ul>
+                <li><b>Fractional Reasoning</b> is a <b>training-free, model-agnostic</b> framework that enables continuous control over reasoning intensity at inference time.</li>
+              
+                <li>It learns a <b>latent steering vector</b> <code>h<sub>steer</sub></code> that captures prompt-induced shifts in the LLM’s internal representations. This vector is derived by contrasting representations from positive and negative prompts across multiple layers.</li>
+              
+                <li>At inference, this vector is applied with a tunable scalar <code>α</code> to modulate reasoning strength:
+                  <br>
+                  <code>h̃ = Rescale(h<sub>ori</sub> + α · h<sub>steer</sub>)</code>,
+                  <br>
+                  where <code>Rescale</code> preserves the norm of the latent state to ensure stability across layers.
+                </li>
+              
+                <li>Fractional Reasoning enables instance-specific steering of reasoning depth and reflection strength, improving output quality without modifying the underlying model.</li>
+              </ul>              
+            </div>        
+            <img id="model" width="70%" src="images/final_performance.png">
+            <h3 class="subtitle has-text-centered">
+              <p style="font-family:Times New Roman"><b>Figure 2. Averaged accuracy across MATH500, GSM8K, and GPQA. Blue bars represent standard test-time scaling methods, purple bars show these methods enhanced by our Fractional Reasoning.</b></p>
+            </h3>   
+        </div>
+  </div>
 </section>
 
 
