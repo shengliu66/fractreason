@@ -180,7 +180,7 @@
               <ul>
                 <li><b>Fractional Reasoning</b> is a <b>training-free, model-agnostic</b> framework that enables continuous control over reasoning intensity at inference time.</li>
               
-                <li>It learns a <b>latent steering vector</b> <code>h<sub>steer</sub></code> that captures prompt-induced shifts in the LLM's internal representations. This vector is derived by contrasting representations from positive and negative prompts across multiple layers.</li>
+                <li>It computes a <b>latent steering vector</b> <code>h<sub>steer</sub></code> that captures prompt-induced shifts in the LLM's internal representations. This vector is derived by contrasting representations from positive and negative prompts across multiple layers.</li>
               
                 <li>At inference, this vector is applied with a tunable scalar <code>α</code> to modulate reasoning strength:
                   <br>
